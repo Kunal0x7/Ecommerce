@@ -1,0 +1,159 @@
+.nav{
+    width:82%;
+    margin: 0 auto;
+    height:6rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border:none;
+    padding: 1rem;
+}
+.left{
+    height:100%;
+    display:flex;
+    align-items:center;
+/* flex:0 0 auto; */
+}
+.left button{
+    /* height:80%;
+    width: 65%; */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.left button img{
+    height:5rem;
+    width:auto;
+}
+.center{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.center ul li{
+    list-style: none;
+    color: rgb(255, 255, 255);
+}
+.center ul li a{
+    text-decoration: none;
+    color: #464646;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--open-sans);
+}
+.center ul li a:hover{
+    color: #8BC34A;
+}
+.right{
+    height:100%;
+    display:flex;
+    align-items:center;
+    gap:2rem;
+}
+.right button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.cart {
+  position: relative;
+}
+.cart button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.cartBadge{
+    cursor: pointer;
+    position:absolute;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color:#8BC34A;
+    top:-30%;
+    left: 60%;
+    border: 2px solid #ffffff;
+}
+.hamBtn{
+    display:none;
+    border: 5px solid black;
+    height: 2.7rem;
+    width: 3rem;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    .nav{
+        width: 92%;
+        height: 7rem;
+        padding: 0.5rem;
+    }
+    .center{
+        display:none;
+    }
+    .cart{
+        display:none;
+    }
+    .person{
+        display: none;
+    }
+    .right p{
+        display: none;
+    }
+    .right{
+        gap: 1rem;
+    }
+    .left button img{
+        height: 4.5rem;
+    }
+    .hamBtn{
+        display:flex;
+        height: 2.8rem;
+        width: 3.2rem;
+        border-width: 4px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav{
+        width: 94%;
+        height: 6.5rem;
+        padding: 0.5rem 0;
+    }
+    .left button img{
+        height: 3.8rem;
+    }
+    .right{
+        gap: 0.6rem;
+    }
+    .hamBtn{
+        height: 2.5rem;
+        width: 2.8rem;
+        border-width: 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav{
+        width: 96%;
+        height: 6rem;
+    }
+    .left button img{
+        height: 3.3rem;
+    }
+    .right{
+        gap: 0.4rem;
+    }
+    .hamBtn{
+        height: 2.2rem;
+        width: 2.5rem;
+        border-width: 3px;
+    }
+}

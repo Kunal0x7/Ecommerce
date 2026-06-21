@@ -1,0 +1,146 @@
+.heroContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfaf8;
+}
+.hero {
+  width: 82%;
+  max-height: 100%;
+  height: auto;
+  /* background-color: #FBFAF8; */
+  display: flex;
+  justify-content: space-between;
+  /* padding-right: 2rem;
+    padding-left: 2rem; */
+  gap: 4%;
+  align-items: center;
+}
+.hero .left {
+  width: 48%;
+  max-height: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .left img {
+  width: 100%;
+  height: 72%;
+}
+.hero .right {
+  position: relative;
+  width: 48%;
+  height: 90%;
+}
+.leaf {
+  user-select: none;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  height: 25%;
+  width: 35%;
+  opacity: 0.4;
+}
+.rightContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.8rem;
+}
+.smallImg {
+  user-select: none;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.smallImg img {
+  width: 16%;
+  height: 70%;
+}
+.rightContent h4 {
+  font-family: var(--Merriweather);
+  word-spacing: 4px;
+  color: #111111;
+  font-weight: 500;
+}
+.rightContent h1 {
+  font-size: 4rem;
+  font-family: var(--Merriweather);
+  font-weight: 900;
+  color: #111111;
+}
+.rightContent p {
+  font-family: var(--open-sans);
+  color: #111111;
+  font-weight: 300;
+}
+.shopButton {
+  height: 3.4rem;
+  width: auto;
+  padding: 0.5rem 2rem;
+  background-color: #6a973a;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.shopButton:hover {
+  background-color: #8bc34a;
+}
+.shopButton h6 {
+  color: white;
+  font-family: var(--open-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.hero .left,
+.hero .right {
+  width: 48%;
+  height: auto;
+}
+
+.hero .left img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+@media (max-width: 710px) {
+  .heroContainer {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .hero {
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+  .hero .left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .hero .right {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+.main{
+    min-height: 20vh;
+    width: 100%;
+    background-color: #F8F6F4;
+    padding:0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main h1{
+    font-family: var(--Merriweather);
+    font-size:1.3rem;
+    font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .main {
+    padding: 0 6%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    padding: 2rem 6%;
+    min-height: auto;
+  }
+  .main h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.15rem;
+  }
+  .main img {
+    height: 1.8rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    gap: 1.2rem 1.5rem;
+    padding: 1.5rem 5%;
+  }
+  .main img {
+    height: 1.5rem;
+  }
+}

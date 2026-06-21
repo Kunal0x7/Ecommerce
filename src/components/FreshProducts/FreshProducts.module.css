@@ -1,0 +1,156 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f6f4;
+  padding-top: 10vh;
+}
+.productContainer {
+  width: 82%;
+  min-height: 60vh;
+  display: grid;
+  background-color: transparent;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 12vh;
+}
+.darkBanner {
+  position: relative;
+  width: 100%;
+  min-height: 22vh;
+  background-color: #111111;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 9%;
+}
+.darkBanner h2 {
+  font-family: var(--merriweather);
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+}
+
+.triangle {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #0c0c0c;
+  transform: translateX(-50%) rotate(45deg);
+}
+.lightBanner {
+  width: 100%;
+  min-height: 12vh;
+  background-color: #f8f6f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lightBanner h2 {
+  font-family: var(--merriweather);
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.absoluteLeaf {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  width: 15%;
+  z-index: 5;
+  /* REMOVED: height, display:flex, justify-content, align-items — no longer needed */
+}
+.absoluteLeaf img {
+  display: block;
+  width: 100%;
+  height: auto; /* ADDED: height now derives from image's natural ratio, not parent */
+}
+@media (max-width: 1100px) and (min-width: 711px) {
+  .container {
+    padding-top: 8vh;
+  }
+  .productContainer {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .darkBanner {
+    padding: 2% 6%;
+  }
+  .darkBanner h2 {
+    font-size: 1.8rem;
+  }
+  .lightBanner h2 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .absoluteLeaf {
+    width: 20%;
+  }
+}
+
+@media (max-width: 710px) {
+  .container {
+    padding-top: 6vh;
+  }
+  .productContainer {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding-bottom: 6vh;
+  }
+  .discountBanner {
+    min-height: 12vh;
+    margin-top: 1.5rem;
+  }
+  .darkBanner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    min-height: unset;
+    padding: 8% 6%;
+  }
+  .darkBanner h2 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .lightBanner {
+    min-height: 10vh;
+    padding: 1rem;
+  }
+  .lightBanner h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .absoluteLeaf {
+    width: 28%;
+    /* height: 10%  ← REMOVE */
+  }
+}
+/* .shopButton {
+  height: 3.4rem;
+  width: auto;
+  padding: 0.5rem 2rem;
+  background-color: #6a973a;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.shopButton:hover {
+  background-color: #8bc34a;
+} */

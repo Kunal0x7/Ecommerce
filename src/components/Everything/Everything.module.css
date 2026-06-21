@@ -1,0 +1,125 @@
+.main{
+    width: 100%;
+    min-height: 220vh;
+    background-color: rgb(180, 88, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding-top: 7.5vh;
+    padding-bottom: 7.5vh;
+    width: 82%;
+    min-height: 220vh;
+    background-color: rgb(183, 148, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filterSection{
+    width: 24%;
+    min-height: 220vh;
+    background-color: rgb(77, 132, 195);
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-right: 2vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.productSection{
+    width: 76%;
+    min-height: 220vh;
+    background-color: rgb(82, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filterHeader{
+    width: 100%;
+    min-height: 3vh;
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: flex-start;
+    gap:0.9vh;
+    align-items: center;
+}
+.filterHeader input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: RGB(17, 17, 17);
+    border: 1px solid #DDDDDD;
+    transition: border 0.7s ease-in-out;
+    width:63%;
+    height:5vh;
+    font-family: var(--open-sans);
+    font-size: 1.1rem;
+}
+.filterHeader input:focus {
+  outline: none; 
+  
+  /* 2. Apply your custom 2px dashed black border */
+  border: 1px dashed #cccccc; 
+}
+.searchButton{
+    width: 13%;
+    min-height: 5vh;
+    background-color: #6A9739;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    border:none;
+    border-radius: 2px;
+}
+.searchLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;
+    min-height: 5vh;
+    background-color: #6A9739;
+}
+.activeFilters{
+    width: 100%;
+    min-height: 5vh;
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:1vh;
+}
+.activeFilters h1{
+    font-family: var(--Merriweather);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.clearFooter{
+    width: 100%;
+    min-height: 4vh;
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:0 1rem;
+}
+.clearFooter button{
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.clearFooter button:hover{
+    text-decoration: none;
+}

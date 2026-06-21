@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --primary: #6aa84f;
+  --primary-dark: #4f7c3a;
+
+  --text: #555;
+  --heading: #111;
+
+  --bg: #f7f7f7;
+  --white: #ffffff;
+
+  --container-width: 1200px;
+  --open-sans: 'Open Sans', sans-serif;
+  --Merriweather: "Merriweather", serif;
+
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  font-size:16px;
+}
+
+body{
+  width:100%;
+  min-height:100vh;
+  overflow-x: hidden;
+}
+
+#root{
+  width:100%;
+  min-height:100vh;
+}

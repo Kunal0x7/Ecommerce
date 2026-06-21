@@ -1,0 +1,104 @@
+.hamNav {
+  z-index: 10;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 100vh;
+  width: 63%;
+  /* position:absolute;
+    top:0;
+    left:60%; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+  background-color: #ffffff;
+  display: flex;
+  gap: 0rem;
+  justify-content: space-around;
+}
+.show{
+   transform:translateX(0);
+   opacity:1;
+}
+
+.hide{
+   transform:translateX(100%);
+   opacity:0;
+   pointer-events:none;
+}
+.hamNav ul {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hamNav ul li {
+  list-style: none;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8rem 0;
+  cursor: pointer;
+}
+.hamNav ul li a{
+  text-decoration: none;
+  color: #8cc63e;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: var(--open-sans);
+}
+.closeBtn {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.hamNav ul li a:hover {
+  color: #6a9739;
+  font-weight: 200;
+}
+.closeIcon {
+  color: #8bc34a;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  height: 100%;
+
+  width: 100%;
+
+  transition: color 0.3s ease;
+}
+
+.closeIcon:hover {
+  color: #6a9739;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  transition: opacity 0.4s ease;
+}
+.backdropShow {
+  opacity: 1;
+  pointer-events: auto;
+}
+.backdropHide {
+  opacity: 0;
+  pointer-events: none;
+}
