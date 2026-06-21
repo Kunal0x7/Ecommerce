@@ -1,0 +1,94 @@
+.filterSection {
+  width: 24%;
+  min-height: 220vh;
+  background-color: rgb(77, 132, 195);
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding-right: 2vh;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.filterHeader {
+  width: 100%;
+  min-height: 3vh;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.9vh;
+  align-items: center;
+}
+.filterHeader input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(17, 17, 17);
+  border: 1px solid #dddddd;
+  transition: border 0.7s ease-in-out;
+  width: 63%;
+  height: 5vh;
+  font-family: var(--open-sans);
+  font-size: 1.1rem;
+}
+.filterHeader input:focus {
+  outline: none;
+  border: 1px dashed #cccccc;
+}
+.searchButton {
+  width: 13%;
+  min-height: 5vh;
+  background-color: #6a9739;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 2px;
+}
+.searchLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: white;
+  min-height: 5vh;
+  background-color: #6a9739;
+}
+.activeFilters {
+  width: 100%;
+  min-height: 5vh;
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1vh;
+}
+.activeFilters h1 {
+  font-family: var(--Merriweather);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.clearFooter {
+  width: 100%;
+  min-height: 4vh;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem;
+}
+.clearFooter button {
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.clearFooter button:hover {
+  text-decoration: none;
+}

@@ -1,4 +1,4 @@
-.main{
+/* .main{
     width: 100%;
     min-height: 220vh;
     background-color: rgb(180, 88, 58);
@@ -58,8 +58,6 @@
 }
 .filterHeader input:focus {
   outline: none; 
-  
-  /* 2. Apply your custom 2px dashed black border */
   border: 1px dashed #cccccc; 
 }
 .searchButton{
@@ -122,4 +120,22 @@
 }
 .clearFooter button:hover{
     text-decoration: none;
+} */
+ .main {
+  width: 100%;
+  min-height: 220vh;
+  background-color: rgb(180, 88, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  padding-top: 7.5vh;
+  padding-bottom: 7.5vh;
+  width: 82%;
+  min-height: 220vh;
+  background-color: rgb(183, 148, 148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

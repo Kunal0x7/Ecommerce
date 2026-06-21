@@ -1,0 +1,8 @@
+.productSection {
+  width: 76%;
+  min-height: 220vh;
+  background-color: rgb(82, 27, 27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
