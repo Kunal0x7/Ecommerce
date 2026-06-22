@@ -1,7 +1,7 @@
 .filterBadge{
     min-height: 7vh;
     width:100%;
-    background-color: rgb(175, 122, 122);
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,4 +37,29 @@
     font-family: var(--open-sans);
     font-size: 0.9rem;
     font-weight: 400;
+}
+@media (max-width: 768px) {
+  .filterBadge h3 {
+    font-size: 0.95rem;
+  }
+
+  .filterBadge p {
+    font-size: 0.85rem;
+  }
+
+  .filterBadge button {
+    height: 2.2vh;
+    width: 2.2vh;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .filterBadge h3 {
+    font-size: 0.85rem;
+  }
+
+  .filterBadge p {
+    font-size: 0.8rem;
+  }
 }
