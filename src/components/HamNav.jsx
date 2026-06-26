@@ -1,4 +1,5 @@
 import styles from "./HamNav.module.css";
+import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 
 export default function HamNav({ hamOpen, closeAction }) {
@@ -15,13 +16,13 @@ export default function HamNav({ hamOpen, closeAction }) {
       >
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Everything</a>
+            <Link to="/everything">Everything</Link>
           </li>
           <li>
             <a href="#">Groceries</a>

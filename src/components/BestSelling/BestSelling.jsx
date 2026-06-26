@@ -1,6 +1,6 @@
 import styles from "./BestSelling.module.css";
 import leafImg from "../../assets/logo-leaf-new.png";
-import Products from "./Products";
+import Product from "./Product";
 import coffeeImg from "../../assets/ProductsImg/coffee.jpg";
 import sanitizer from "../../assets/ProductsImg/sanitizer.jpg";
 import chillies from "../../assets/ProductsImg/chillies.jpg";
@@ -15,7 +15,7 @@ export default function BestSelling({ isBestSelling }) {
       <div className={styles.productContainer}>
         <button>
           {
-            <Products
+            <Product
               img={coffeeImg}
               type="Groceries"
               name="Arabica Coffee"
@@ -26,7 +26,7 @@ export default function BestSelling({ isBestSelling }) {
         </button>
         <button>
           {isBestSelling ? (
-            <Products
+            <Product
               img={sanitizer}
               type="Groceries"
               name="Hand Sanitizer"
@@ -34,7 +34,7 @@ export default function BestSelling({ isBestSelling }) {
               onSale={false}
             />
           ) : (
-            <Products
+            <Product
               img={orangeJuice}
               type="juice"
               name="Fresh Orange Juice"
@@ -45,7 +45,7 @@ export default function BestSelling({ isBestSelling }) {
         </button>
         <button>
           {isBestSelling ? (
-            <Products
+            <Product
               img={chillies}
               type="Groceries"
               name="Handpicked Red Chillies"
@@ -53,7 +53,7 @@ export default function BestSelling({ isBestSelling }) {
               onSale={false}
             />
           ) : (
-            <Products
+            <Product
               img={sanitizer}
               type="Groceries"
               name="Hand Sanitizer"
@@ -64,7 +64,7 @@ export default function BestSelling({ isBestSelling }) {
         </button>
         <button>
           {isBestSelling ? (
-            <Products
+            <Product
               img={oil}
               type="Groceries"
               name="Natural Extracted Edible"
@@ -73,7 +73,7 @@ export default function BestSelling({ isBestSelling }) {
               salePrice="25.00"
             />
           ) : (
-            <Products
+            <Product
               img={chillies}
               type="Groceries"
               name="Handpicked Red Chillies"

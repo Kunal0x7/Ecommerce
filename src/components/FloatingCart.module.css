@@ -1,75 +1,71 @@
-.container{
+.container {
+  position: fixed;
 
-    position:fixed;
+  bottom: 2rem;
 
-    bottom:2rem;
+  right: 2rem;
 
-    right:2rem;
+  height: 4.5rem;
 
-    height:4.5rem;
+  width: 4.5rem;
 
-    width:4.5rem;
+  border: none;
 
-    border:none;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: #6a973a;
 
-    background:#6A973A;
+  cursor: pointer;
 
-    cursor:pointer;
+  display: none;
 
-    display:none;
-    
+  justify-content: center;
 
-    justify-content:center;
+  align-items: center;
 
-    align-items:center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
-    box-shadow:0 4px 12px rgba(0,0,0,0.2);
-
-    position:fixed;
+  position: fixed;
 }
 
-.icon{
+.icon {
+  color: white;
 
-    color:white;
-
-    font-size:2.1rem;
+  font-size: 2.1rem;
 }
 
-.cartValue{
+.cartValue {
+  position: absolute;
 
-    position:absolute;
+  top: -0.4rem;
 
-    top:-0.4rem;
+  left: -0.2rem;
 
-    left:-0.2rem;
+  height: 2rem;
 
-    height:2rem;
+  width: 2rem;
 
-    width:2rem;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: #12b981;
 
-    background:#12B981;
+  color: white;
 
-    color:white;
+  font-size: 1rem;
 
-    font-size:1rem;
+  font-weight: 700;
 
-    font-weight:700;
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  align-items: center;
 
-    align-items:center;
-
-    border:none;
+  border: none;
 }
-@media (max-width: 1000px){
-    .container{
-        display: flex;
-        z-index: 9999;  /* ADD THIS */
-    }
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    z-index: 9999; /* ADD THIS */
+  }
 }

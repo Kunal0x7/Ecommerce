@@ -2,6 +2,7 @@ import styles from "./Hero.module.css";
 import heroImg from "../assets/organic-products-hero.png";
 import newLeaf from "../assets/logo-leaf-new.png";
 import ShopButton from "./UI/ShopButton";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -21,7 +22,9 @@ export default function Hero() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
-            <ShopButton />
+            <Link to="everything">
+              <ShopButton />
+            </Link>
           </div>
           <img src={newLeaf} alt="leaf" className={styles.leaf} />
         </div>

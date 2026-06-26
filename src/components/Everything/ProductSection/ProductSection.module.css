@@ -1,8 +1,287 @@
 .productSection {
+  padding-top: 1vh;
   width: 76%;
-  min-height: 220vh;
-  background-color: rgb(82, 27, 27);
+  background-color: rgb(69, 188, 202);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.5vh;
+}
+.upperArea {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  background-color: #6d0a0a;
+  align-items: flex-start;
+}
+.upperArea h3 {
+  font-family: var(--open-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #777777;
+}
+.upperArea h1 {
+  font-family: var(--Varela);
+  font-size: 4.25rem;
+  font-weight: 600;
+  color: #8bc34a;
+}
+.upperArea p {
+  font-family: var(--open-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333333;
+}
+.filterPlaceholder {
+  width: 100%;
+  height: 8vh;
+  display: none;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 24%; /* same as your filterSection width */
+  width: 76%; /* same as your productSection width */
+  margin-top: 0;
+  z-index: 99;
+}
+.active {
+  display: block;
+}
+.beforeProductContainer {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #6d931c;
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding-right: 3rem;
+}
+.beforeProductContainer h3 {
+  font-family: var(--open-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777777;
+}
+.beforeProductContainer select:focus {
+  outline: none;
+}
+.sortSelect {
+  cursor: pointer;
+  appearance: none;
+  width: 25%;
+  min-height: 3rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5 7l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+.productContainer {
+  width: 100%;
+  min-height: auto;
+  background-color: #6d0a0a;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.pageButton {
+  width: 30%;
+  min-height: 6vh;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0.5rem;
+}
+.pageButton button {
+  background-color: #8bc34a;
+  color: #ffffff;
+  border: none;
+}
+.pageButton button:hover {
+  background-color: #6fa832;
+  color: #ffffff;
+  border: none;
+}
+
+/* Large desktops: 1440px+ */
+@media (min-width: 1440px) {
+  .productSection {
+    /* padding-left: 4rem; */
+  }
+  .upperArea h1 {
+    font-size: 5rem;
+  }
+  .upperArea {
+    padding-right: 4rem;
+  }
+  .beforeProductContainer {
+    padding-right: 4rem;
+  }
+  .productContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+  .sortSelect {
+    width: 20%;
+  }
+  .pageButton {
+    width: 25%;
+  }
+}
+
+/* Standard desktops: 1025px–1439px — 4 columns, base styles handle this */
+
+/* Small desktops / large tablets landscape: 769px–1024px — 3 columns */
+@media (max-width: 1024px) {
+  .productSection {
+    padding-left: 2rem;
+    gap: 2vh;
+  }
+  .upperArea {
+    padding-right: 2rem;
+  }
+  .upperArea h1 {
+    font-size: 3.5rem;
+  }
+  .beforeProductContainer {
+    padding-right: 2rem;
+  }
+  .sortSelect {
+    width: 35%;
+  }
+  .productContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .pageButton {
+    width: 40%;
+  }
+}
+
+/* Tablets portrait: 601px–768px — 3 columns */
+@media (max-width: 768px) {
+  .productSection {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    gap: 2vh;
+    min-height: auto;
+  }
+  .upperArea {
+    padding-right: 1rem;
+  }
+  .upperArea h1 {
+    font-size: 3rem;
+  }
+  .upperArea p {
+    font-size: 0.95rem;
+  }
+  .beforeProductContainer {
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .sortSelect {
+    width: 55%;
+  }
+  .productContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    min-height: auto;
+  }
+  .pageButton {
+    width: 55%;
+  }
+}
+
+/* Large phones: 481px–600px — 2 columns */
+@media (max-width: 600px) {
+  .productSection {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .upperArea h1 {
+    font-size: 2.5rem;
+  }
+  .upperArea p {
+    font-size: 0.9rem;
+  }
+  .beforeProductContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .sortSelect {
+    width: 100%;
+  }
+  .productContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+  }
+  .pageButton {
+    width: 70%;
+  }
+}
+
+/* Small phones: 320px–480px — 2 columns */
+@media (max-width: 480px) {
+  .productSection {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    gap: 1.5vh;
+  }
+  .upperArea h3 {
+    font-size: 0.78rem;
+  }
+  .upperArea h1 {
+    font-size: 2rem;
+  }
+  .upperArea p {
+    font-size: 0.85rem;
+  }
+  .beforeProductContainer h3 {
+    font-size: 0.85rem;
+  }
+  .sortSelect {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  .productContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+  .pageButton {
+    width: 90%;
+  }
+}
+
+/* Very small phones: below 320px — 2 columns */
+@media (max-width: 320px) {
+  .upperArea h1 {
+    font-size: 1.75rem;
+  }
+  .productContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .pageButton {
+    width: 100%;
+  }
 }

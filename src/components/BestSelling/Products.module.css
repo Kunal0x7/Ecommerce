@@ -1,4 +1,4 @@
-.main{
+/* .main{
     position: relative;
     width: 100%;
     min-height: 50vh;
@@ -37,6 +37,7 @@
     font-size: 18px;
     font-weight: 400;
     color: #000;
+    text-decoration: none;
 }
 
 .type{
@@ -57,6 +58,7 @@
     font-size: 16px;
     color: #111111;
     text-align: center;
+    text-decoration: none;
 }
 .priceRow{
     display: flex;
@@ -74,50 +76,473 @@
     font-weight: 700;
     color: #333333;
 }
-@media (max-width: 1100px) and (min-width: 711px) {
-    .imageWrapper {
-        height: auto;
-        aspect-ratio: 4 / 3;
-    }
 
-    .saleBadge {
-        left: auto;
-        right: 0.5rem;
-    }
+@media (min-width: 1440px) {
+  .main {
+    min-height: 45vh;
+  }
+  .imageWrapper {
+    height: 320px;
+  }
+  .saleBadge {
+    height: 4.5rem;
+    width: 4.5rem;
+    top: -2.5rem;
+  }
+  .saleBadge h3 {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 710px) {
-    .main {
-        min-height: auto;
-    }
 
-    .imageWrapper {
-        height: auto;
-        aspect-ratio: 4 / 3;
-    }
+@media (max-width: 1199px) and (min-width: 1025px) {
+  .imageWrapper {
+    height: 220px;
+  }
+  .saleBadge {
+    left: auto;
+    right: 0.5rem;
+    top: -2rem;
+  }
+  .name {
+    font-size: 15px;
+  }
+}
 
-    .saleBadge {
-        height: 3rem;
-        width: 3rem;
-        top: -1.5rem;
-        left: auto;
-        right: 0.5rem;
-    }
 
-    .saleBadge h3 {
-        font-size: 13px;
-    }
+@media (max-width: 1024px) and (min-width: 769px) {
+  .main {
+    min-height: auto;
+  }
+  .imageWrapper {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .saleBadge {
+    left: auto;
+    right: 0.5rem;
+    top: -1.8rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .saleBadge h3 {
+    font-size: 15px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .type {
+    font-size: 0.8rem;
+  }
+}
 
-    .name {
-        font-size: 13px;
-    }
 
-    .type {
-        font-size: 0.75rem;
-    }
+@media (max-width: 768px) and (min-width: 601px) {
+  .main {
+    min-height: auto;
+  }
+  .imageWrapper {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .saleBadge {
+    height: 3.25rem;
+    width: 3.25rem;
+    top: -1.6rem;
+    left: auto;
+    right: 0.5rem;
+  }
+  .saleBadge h3 {
+    font-size: 14px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .type {
+    font-size: 0.78rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.9rem;
+  }
+}
 
-    .oldPrice,
-    .newPrice {
-        font-size: 0.85rem;
-    }
+
+@media (max-width: 600px) and (min-width: 481px) {
+  .main {
+    min-height: auto;
+  }
+  .imageWrapper {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .saleBadge {
+    height: 3rem;
+    width: 3rem;
+    top: -1.5rem;
+    left: auto;
+    right: 0.5rem;
+  }
+  .saleBadge h3 {
+    font-size: 13px;
+  }
+  .name {
+    font-size: 13px;
+  }
+  .type {
+    font-size: 0.75rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .main {
+    min-height: auto;
+    gap: 0.35rem;
+  }
+  .imageWrapper {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  .saleBadge {
+    height: 2.75rem;
+    width: 2.75rem;
+    top: -1.25rem;
+    left: auto;
+    right: 0.4rem;
+  }
+  .saleBadge h3 {
+    font-size: 11px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .type {
+    font-size: 0.7rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .imageWrapper {
+    aspect-ratio: 1 / 1;
+  }
+  .saleBadge {
+    height: 2.5rem;
+    width: 2.5rem;
+    top: -1.1rem;
+    right: 0.3rem;
+  }
+  .saleBadge h3 {
+    font-size: 10px;
+  }
+  .name {
+    font-size: 11px;
+  }
+  .type {
+    font-size: 0.65rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.75rem;
+  }
+} */
+.main {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  padding-bottom: 1rem;
+}
+.imageWrapper {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.saleBadge {
+  position: absolute;
+  height: 3.5rem;
+  width: 3.5rem;
+  top: 0rem;
+  right: 0rem;
+  left: auto;
+  border-radius: 50%;
+  background-color: #8BC34A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.saleBadge h3 {
+  font-family: var(--open-sans);
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+.type {
+  font-size: 0.8rem;
+  font-family: var(--open-sans);
+  font-weight: 400;
+  color: #666666;
+  margin: 0;
+}
+.name {
+  margin: 0;
+  font-family: var(--Merriweather);
+  font-weight: 600;
+  font-size: 15px;
+  color: #111111;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.oldPrice {
+  text-decoration: line-through;
+  color: #999999;
+  font-family: var(--open-sans);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.newPrice {
+  font-family: var(--open-sans);
+  font-weight: 700;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+/* Large desktops: 1440px+ */
+@media (min-width: 1440px) {
+  .imageWrapper {
+    aspect-ratio: 3 / 2;
+  }
+  .saleBadge {
+    height: 3rem;
+    width: 3rem;
+    top: 0rem;
+    right:0rem;
+    /* right: 0.75rem; */
+  }
+  .saleBadge h3 {
+    font-size: 17px;
+  }
+  .name {
+    font-size: 17px;
+  }
+  .type {
+    font-size: 0.875rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 1rem;
+  }
+}
+
+/* Small desktops: 1025px–1199px */
+@media (max-width: 1199px) and (min-width: 1025px) {
+  .imageWrapper {
+    aspect-ratio: 3 / 2;
+  }
+  .saleBadge {
+    height: 3rem;
+    width: 3rem;
+    top: 0rem;
+    right: 0rem;
+  }
+  .saleBadge h3 {
+    font-size: 14px;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .type {
+    font-size: 0.78rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.875rem;
+  }
+}
+
+/* Tablets landscape: 769px–1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .imageWrapper {
+    aspect-ratio: 4 / 3;
+  }
+  .saleBadge {
+    height: 3rem;
+    width: 3rem;
+    top: 0rem;
+    right: 0rem;
+  }
+  .saleBadge h3 {
+    font-size: 13px;
+  }
+  .name {
+    font-size: 13px;
+  }
+  .type {
+    font-size: 0.75rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablets portrait: 601px–768px */
+@media (max-width: 768px) and (min-width: 601px) {
+  .imageWrapper {
+    aspect-ratio: 4 / 3;
+  }
+  .saleBadge {
+    height: 2.85rem;
+    width: 2.85rem;
+    top: 0rem;
+    right: 0rem;
+  }
+  .saleBadge h3 {
+    font-size: 12px;
+  }
+  .name {
+    font-size: 13px;
+  }
+  .type {
+    font-size: 0.72rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.82rem;
+  }
+}
+
+/* Large phones: 481px–600px */
+@media (max-width: 600px) and (min-width: 481px) {
+  .imageWrapper {
+    aspect-ratio: 4 / 3;
+  }
+  .saleBadge {
+    height: 2.65rem;
+    width: 2.65rem;
+    top: -1.3rem;
+    right: 0.4rem;
+  }
+  .saleBadge h3 {
+    font-size: 11px;
+  }
+  .name {
+    font-size: 12px;
+    padding: 0 0.35rem;
+  }
+  .type {
+    font-size: 0.7rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.8rem;
+  }
+  .priceRow {
+    gap: 0.35rem;
+  }
+}
+
+/* Small phones: 320px–480px */
+@media (max-width: 480px) {
+  .main {
+    gap: 0.35rem;
+    padding-bottom: 0.75rem;
+  }
+  .imageWrapper {
+    aspect-ratio: 1 / 1;
+  }
+  .saleBadge {
+    height: 2.4rem;
+    width: 2.4rem;
+    top: -1.2rem;
+    right: 0.35rem;
+  }
+  .saleBadge h3 {
+    font-size: 10px;
+  }
+  .name {
+    font-size: 11px;
+    padding: 0 0.25rem;
+  }
+  .type {
+    font-size: 0.65rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.75rem;
+  }
+  .priceRow {
+    gap: 0.3rem;
+  }
+}
+
+/* Very small phones: below 320px */
+@media (max-width: 320px) {
+  .main {
+    gap: 0.25rem;
+    padding-bottom: 0.5rem;
+  }
+  .imageWrapper {
+    aspect-ratio: 1 / 1;
+  }
+  .saleBadge {
+    height: 2.1rem;
+    width: 2.1rem;
+    top: -1rem;
+    right: 0.3rem;
+  }
+  .saleBadge h3 {
+    font-size: 9px;
+  }
+  .name {
+    font-size: 10px;
+    padding: 0 0.2rem;
+  }
+  .type {
+    font-size: 0.6rem;
+  }
+  .oldPrice,
+  .newPrice {
+    font-size: 0.7rem;
+  }
+  .priceRow {
+    gap: 0.25rem;
+  }
 }
