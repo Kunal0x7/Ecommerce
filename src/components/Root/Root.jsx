@@ -5,6 +5,7 @@ import NavBar from "../NavBar";
 import HamNav from "../HamNav";
 import Footer from "../Footer/Footer";
 export default function Root() {
+
   const [hamOpen, setHamOpen] = useState(false);
   console.log(hamOpen);
   function toggleHam() {

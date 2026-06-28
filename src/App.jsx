@@ -15,8 +15,9 @@ export default function App() {
         {index: true,element:<HomePage/>},
         {path:"/about",element:<div>About</div>},
         {path:"/everything",element:<Everything/>},
-        {path:"/groceries",element:<div>Groceries</div>},
-        {path:"/juice",element:<div>Juice</div>},
+        {path:"/groceries",element:<Everything/>},
+        {path:"/juice",element:<Everything/>},
+        {path:"/fruits",element:<Everything/>},
         {path:"/contact",element:<div>Contact</div>}
       ]
     },

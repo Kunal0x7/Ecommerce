@@ -16,25 +16,39 @@ export default function HamNav({ hamOpen, closeAction }) {
       >
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link onClick={closeAction} to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link onClick={closeAction} to="/about">
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/everything">Everything</Link>
+            <Link onClick={closeAction} to="/everything">
+              Everything
+            </Link>
           </li>
           <li>
-            <a href="#">Groceries</a>
+            <Link onClick={closeAction} to="/groceries">
+              Groceries
+            </Link>
           </li>
           <li>
-            <a href="#">Juice</a>
+            <Link onClick={closeAction} to="/juice">
+              Juice
+            </Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link onClick={closeAction} to="/contact">
+              Contact
+            </Link>
           </li>
           <li>
-            <a href="#">Account</a>
+            <Link onClick={closeAction} to="/account">
+              Account
+            </Link>
           </li>
         </ul>
         <button className={styles.closeBtn} onClick={closeAction}>
