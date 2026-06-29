@@ -3,9 +3,11 @@ import { IoMdCart } from "react-icons/io";
 import { IoPerson } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import styles from "./NavBar.module.css";
 export default function NavBar({ toggleHam }) {
+  const cart = useSelector((state) => state.cart);
 
   return (
     <nav className={styles.nav}>
@@ -40,7 +42,7 @@ export default function NavBar({ toggleHam }) {
             <IoMdCart
               style={{ color: "#8BC34A", fontSize: "24px", cursor: "pointer" }}
             />
-            <span className={styles.cartBadge}>0</span>
+            <span className={styles.cartBadge}>{cart.totalQuantity}</span>
           </button>
         </div>
 
