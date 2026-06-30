@@ -23,6 +23,7 @@ export default function App() {
         { path: "/groceries", element: <Everything /> },
         {path: "/groceries/:productId",element: <ProductPage />},
         { path: "/contact", element: <div>Contact</div> },
+        {path: "/account",element: <div>Account</div>},
       ],
     },
     {
