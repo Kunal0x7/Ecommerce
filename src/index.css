@@ -47,3 +47,7 @@ html, body, #root {
   margin: 0;
   padding: 0;
 }
+::selection {
+  background-color: #6a973a; /* Green background */
+  color: #000000;            /* Black text */
+}

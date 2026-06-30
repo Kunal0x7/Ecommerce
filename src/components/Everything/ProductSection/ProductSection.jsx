@@ -13,7 +13,7 @@ export default function ProductSection({ filters, setFilters }) {
   const currentRoute = useLocation();
   const scrollTimeout = useRef(null);
   const handleInfiniteScroll = useCallback(() => {
-    if (scrollTimeout.current) return; // ✅ debounce
+    if (scrollTimeout.current) return; 
 
     scrollTimeout.current = setTimeout(() => {
       scrollTimeout.current = null;
@@ -30,7 +30,7 @@ export default function ProductSection({ filters, setFilters }) {
       } catch (e) {
         console.log(e);
       }
-    }, 200); // wait 200ms before firing
+    }, 200);
   }, [setFilters]);
 
   useEffect(() => {
@@ -106,6 +106,7 @@ export default function ProductSection({ filters, setFilters }) {
         </h1>
 
         <p>
+          {console.log(currentRoute)}
           Explore our curated selection of fresh, natural juices made from
           high-quality ingredients. Designed for a healthier lifestyle, our
           juices combine great taste with essential nutrition, delivering a
@@ -142,7 +143,7 @@ export default function ProductSection({ filters, setFilters }) {
 
       <div className={styles.productContainer}>
         {filters.toUseProducts.map((product, index) => (
-          <Link to={`shop/${product.id}`} key={index}>
+          <Link to= {product.id} key={index}>
             <Product
               img={`${product.image}`}
               type={product.category}

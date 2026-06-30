@@ -40,11 +40,11 @@ export default function HamNav({ hamOpen, closeAction }) {
               Juice
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link onClick={closeAction} to="/contact">
               Contact
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link onClick={closeAction} to="/account">
               Account

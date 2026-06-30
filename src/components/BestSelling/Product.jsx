@@ -13,11 +13,11 @@ export default function Product({ img, type, name, price, onSale, salePrice }) {
       <div className={styles.priceRow}>
         {onSale ? (
           <>
-            <span className={styles.oldPrice}>£{price}</span>
-            <span className={styles.newPrice}>£{salePrice}</span>
+            <span className={styles.oldPrice}>₹{price}</span>
+            <span className={styles.newPrice}>₹{salePrice}</span>
           </>
         ) : (
-          <span className={styles.newPrice}>£{price}</span>
+          <span className={styles.newPrice}>₹{price}</span>
         )}
       </div>
     </div>

@@ -1,4 +1,4 @@
-.container {
+/* .container {
   position: fixed;
 
   bottom: 2rem;
@@ -26,6 +26,28 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
   position: fixed;
+} */
+ .container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  border: none;
+  border-radius: 50%;
+  background: #6a973a;
+  cursor: grab;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  touch-action: none; /* prevents scrolling while dragging on touch devices */
+  user-select: none;
+  will-change: transform;
+}
+
+.container:active {
+  cursor: grabbing;
 }
 
 .icon {

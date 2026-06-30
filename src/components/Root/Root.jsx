@@ -4,6 +4,8 @@ import { useState } from "react";
 import NavBar from "../NavBar";
 import HamNav from "../HamNav";
 import Footer from "../Footer/Footer";
+import SlideCart from "../SlideCart/SlideCart";
+import FloatingCart from "../FloatingCart";
 export default function Root() {
 
   const [hamOpen, setHamOpen] = useState(false);
@@ -17,6 +19,8 @@ export default function Root() {
       <HamNav hamOpen={hamOpen} closeAction={toggleHam} />
         <Outlet />
       <Footer />
+      <SlideCart/>
+      <FloatingCart/>
     </section>
   );
 }

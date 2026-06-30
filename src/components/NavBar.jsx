@@ -4,11 +4,17 @@ import { IoPerson } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { toggleCartActions } from "../store/toogle-cart-slice";
 
 import styles from "./NavBar.module.css";
 export default function NavBar({ toggleHam }) {
   const cart = useSelector((state) => state.cart);
-
+  const dispatch = useDispatch();
+  const totalAmount = useSelector((state) => state.cart.totalAmount);
+  function toggleCartHandler() {
+    dispatch(toggleCartActions.toggle());
+  }
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>
@@ -19,7 +25,7 @@ export default function NavBar({ toggleHam }) {
       <div className={styles.center}>
         <ul>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/everything">Everything</Link>
@@ -30,15 +36,15 @@ export default function NavBar({ toggleHam }) {
           <li>
             <Link to="/juice">Juice</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/contact">Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className={styles.right}>
-        <p>£ 0.00</p>
+        <p>₹ {totalAmount.toFixed(2)}</p>
         <div className={styles.cart}>
-          <button>
+          <button onClick={toggleCartHandler}>
             <IoMdCart
               style={{ color: "#8BC34A", fontSize: "24px", cursor: "pointer" }}
             />
