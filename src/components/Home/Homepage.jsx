@@ -4,7 +4,7 @@ import FloatingCart from '../FloatingCart'
 import Features from '../Features'
 import BestSelling from '../BestSelling/BestSelling'
 import FreshProducts from '../FreshProducts/FreshProducts'
-import CustomerReview from '../customerReviews/customerReview'
+import CustomerReview from '../customerReviews/CustomerReview'
 import FeaturedBrands from '../FeaturedBrands/FeaturedBrands'
 export default function HomePage() {
 
