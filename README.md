@@ -2,7 +2,7 @@
 
 A modern, responsive ecommerce web application built with **React 19**, **Redux Toolkit**, and **React Router 7**. It features category-based product browsing, live search, sorting, price-range filtering with an MUI slider, infinite scroll, a slide-out cart, and a draggable floating cart button — all backed by a centralized Redux store.
 
-**🔗 Live Demo:** [https://6a4395df49197ccde4672eb7--boisterous-basbousa-db2ddd.netlify.app/](https://6a4395df49197ccde4672eb7--boisterous-basbousa-db2ddd.netlify.app/)
+**🔗 Live Demo:** [https://6a4395df49197ccde4672eb7--boisterous-basbousa-db2ddd.netlify.app/](https://6a439cd849197cf17e672ece--organicstored.netlify.app/)
 
 > ⚠️ This is a Netlify **deploy-preview** URL (note the `--` build hash in the subdomain), which can change on every new deploy. Once you set a permanent site name in Netlify, swap this link for your stable production URL (e.g. `your-site-name.netlify.app`).
 
