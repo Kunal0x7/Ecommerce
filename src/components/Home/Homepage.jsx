@@ -1,6 +1,5 @@
 import styles from './HomePage.module.css'
 import Hero from '../Hero'
-import FloatingCart from '../FloatingCart'
 import Features from '../Features'
 import BestSelling from '../BestSelling/BestSelling'
 import FreshProducts from '../FreshProducts/FreshProducts'
@@ -11,7 +10,6 @@ export default function HomePage() {
   return (
      <main className={styles.main}>
         <Hero/>
-        <FloatingCart/>
         <Features/>
         <BestSelling isBestSelling={true}/>
         <FreshProducts/>
